@@ -1,0 +1,516 @@
+/* Poppins*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --primary-color: #BC8A5F;
+	--secondary-color: #583101;
+    --background-color: #FFEDD8;
+    --dark-color: #151515;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* UTILIDADES */
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+
+/* HEADER */
+.container-header {
+    background-color: var(--background-color);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+header {
+	background-color: var(--background-color);
+}
+
+.cafeteando-logo, .cafeteando-logo-img{
+	height: 7rem;
+}
+
+.usser-buttons {
+	position: absolute;
+	right: 0.5rem;
+}
+
+.mi-cuenta,
+.mi-carrito {
+	text-decoration: none;
+	border-radius: 4rem;
+	height: 3.5rem;
+	font-size: 1.5rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	-webkit-transition: all 200ms linear;
+	transition: all 200ms linear;
+	padding: 0 10px;
+	letter-spacing: 1px;
+	display: -webkit-inline-flex;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--primary-color);
+	color: #000000;
+}
+
+.mi-cuenta span {
+	font-size: 1.5rem;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+i.fa-solid.fa-user {
+	font-size: 1.5rem;
+}
+
+.mi-cuenta i,
+.mi-carrito i {
+	padding-left: 1rem;
+}
+button.btn.show {
+	border-color: transparent;
+	background-color: transparent;
+}
+
+.mi-cuenta:hover, .mi-carrito:hover {
+    background-color: var(--secondary-color);
+    color: #ffffff;
+    box-shadow: 0 8px 24px 0 rgba(16,39,112,.2);
+    text-decoration: none;
+}
+
+
+.dropdown-menu.show {
+	background-color: var(--secondary-color);
+}
+
+a.dropdown-item {
+	color: #ffffff;
+}
+
+a.dropdown-item:hover {
+	background-color: var(--primary-color);
+	color: #ffffff;
+}
+
+/* Barra de navegación */
+.navbar {
+	color: var(--primary-color);
+	margin-top: 1rem;
+}
+
+.container-fluid{
+	background-color: var(--primary-color);
+	font-family: 'Poppins', sans-serif;
+}
+
+.cafeteando-logo-icono{
+	width: 3.5rem;
+	height: auto;
+}
+
+.navbar.navbar-expand-lg.bg-body-tertiary {
+	font-family: 'Poppins', sans-serif;
+	font-size: 62.5%;
+	font-style: bold;
+	padding: 0;
+}
+.nav-item {
+	font-size: 1.5rem;
+	font-weight: 550;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+button.btn.btn-dark {
+	font-size: 1.2rem;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+button.btn.btn-dark:hover {
+	background-color: var(--secondary-color);
+	font-weight: 550;
+}
+
+/* Banner */
+.banner {
+	background-image: linear-gradient(100deg, #000000, #00000020),
+	url('../Imagenes/Inicio/banner.webp');
+	height: 60rem;
+	background-size: cover;
+	background-position: center;
+}
+
+.content-banner {
+	max-width: 90rem;
+	margin: 0 auto;
+	padding: 25rem 0;
+}
+
+.content-banner p {
+	color: var(--primary-color);
+	font-size: 1.2rem;
+	margin-bottom: 1rem;
+	font-weight: 500;
+}
+
+.content-banner h2 {
+	color: #ffffff;
+	font-size: 3.5rem;
+	font-weight: 500;
+	line-height: 1.2;
+}
+
+.content-banner button {
+	margin-top: 2rem;
+	border: none;
+	background-color: var(--primary-color);
+	color: #fff;
+	text-transform: uppercase;
+	padding: 1rem 3rem;
+	border-radius: 2rem;
+	font-size: 1.4rem;
+	font-family: inherit;
+	cursor: pointer;
+	font-weight: 600;
+}
+
+.content-banner button:hover {
+	background-color: var(--secondary-color);
+	color: #ffffff;
+}
+
+
+/* Caracteristicas */
+.main-content {
+    background-color: var(--background-color);
+}
+
+.container-features {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    padding: 3rem 0;
+}
+
+.card-feature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+
+    background-color: #ffffff;
+    border-radius: 1rem;
+    padding: 1.5rem 0;
+}
+
+.card-feature i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    padding-left: 1rem;
+}
+
+.feature-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.feature-content span {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--dark-color);
+}
+
+.feature-content p {
+    color: #777777;
+    font-weight: 500;
+}
+
+/* Footer */
+.footer {
+	background-color: var(--primary-color);
+}
+
+.container-footer {
+	display: flex;
+	flex-direction: column;
+	gap: 4rem;
+	padding: 3rem;
+}
+
+.menu-footer {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr) 30rem;
+	gap: 3rem;
+}
+
+.title-footer {
+	font-weight: 600;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+}
+
+.contact-info,
+.information,
+.my-account,
+.newsletter {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.contact-info ul,
+.information ul,
+.my-account ul {
+	display: flex;
+	flex-direction: column;
+    padding-left: 0rem;
+	gap: 1rem;
+}
+
+.contact-info ul li,
+.information ul li,
+.my-account ul li {
+	list-style: none;
+	color: #fff;
+	font-size: 1.4rem;
+	font-weight: 300;
+}
+
+.information ul li a,
+.my-account ul li a {
+	text-decoration: none;
+	color: #fff;
+	font-weight: 300;
+}
+
+.information ul li a:hover,
+.my-account ul li a:hover {
+	color: var(--dark-color);
+}
+
+.social-icons {
+	display: flex;
+	gap: 1.5rem;
+}
+
+.social-icons span {
+	border-radius: 50%;
+	width: 3rem;
+	height: 3rem;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.social-icons span i {
+	color: #fff;
+	font-size: 1.2rem;
+}
+
+.facebook {
+	background-color: #3b5998;
+}
+
+.instagram {
+    background: linear-gradient(
+        #405de6,
+        #833ab4,
+        #c13584,
+        #e1306c,
+        #fd1d1d,
+        #f56040,
+        #fcaf45
+    );
+}
+
+.x {
+    background-color: #000000;
+}
+.youtube {
+	background-color: #c4302b;
+}
+
+.content p {
+	font-size: 1.4rem;
+	color: #fff;
+	font-weight: 300;
+}
+
+.content input {
+	outline: none;
+	background: none;
+	border: none;
+	border-bottom: 2px solid #d2b495;
+	cursor: pointer;
+	padding: 0.5rem 0 1.2rem;
+	color: var(--dark-color);
+	display: block;
+	margin-bottom: 3rem;
+	margin-top: 2rem;
+	width: 100%;
+	font-family: inherit;
+}
+
+.content input::-webkit-input-placeholder {
+	color: #eee;
+}
+
+.content button {
+	border: none;
+	background-color: var(--dark-color);
+	color: #fff;
+	text-transform: uppercase;
+	padding: 1rem 3rem;
+	border-radius: 2rem;
+	font-size: 1.4rem;
+	font-family: inherit;
+	cursor: pointer;
+	font-weight: 600;
+}
+
+.content button:hover {
+	background-color: var(--secondary-color);
+	color: #ffffff;
+}
+
+.copyright {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 2rem;
+
+	border-top: 1px solid #d2b495;
+}
+
+.copyright p {
+	font-weight: 400;
+	font-size: 1.6rem;
+}
+
+/* Responsive */
+/* Media Queries --992px */
+@media (max-width: 992px) {
+	.mi-cuenta span,
+	.mi-carrito span {
+		display: none;
+	}
+
+	.mi-cuenta i,
+	.mi-carrito i {
+		align-items: center;
+		justify-content: center;
+		padding: 0;
+	}
+}
+
+/* Media Queries -- 768px */
+@media (max-width: 768px) {
+	html {
+		font-size: 55%;
+	}
+
+	.header {
+		padding: 2rem;
+	}
+
+	.container-header {
+		display: flex;
+		justify-content: space-between;
+		text-align: justify;
+	}
+
+	.cafeteando-logo,
+	.cafeteando-logo-img{
+		height: 6rem;
+		text-align: left;
+	}
+
+	.mi-cuenta span,
+	.mi-carrito span {
+		display: none;
+	}
+
+	.mi-cuenta i,
+	.mi-carrito i {
+		align-items: center;
+		justify-content: center;
+		padding: 0;
+	}
+
+	.content-banner {
+		max-width: 50rem;
+		margin: 0 auto;
+		padding: 25rem 0;
+	}
+
+	.container-features {
+		grid-template-columns: repeat(2, 1fr);
+		padding: 3rem 2rem;
+	}
+
+	.card-feature {
+		padding: 2rem;
+	}
+
+	.menu-footer {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.copyright {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 1.5rem;
+	}
+}
+
+/* Media Queries -- 576px */
+@media (max-width: 576px) {
+	html {
+		font-size: 42.5%;
+	}
+
+	.content-banner {
+		max-width: 50rem;
+		padding: 22rem 0;
+	}
+
+	.card-feature {
+		flex-direction: column;
+		border-radius: 2rem;
+	}
+
+	.feature-content {
+		align-items: center;
+	}
+
+	.feature-content p {
+		font-size: 1.4rem;
+		text-align: center;
+	}
+
+	.feature-content span {
+		font-size: 1.6rem;
+		text-align: center;
+	}
+}

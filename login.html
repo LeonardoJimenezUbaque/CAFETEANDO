@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- LENGUAJE -->
+<head>
+    <meta charset="UTF-8"> <!-- CODIFICACION DE CARACTERES -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- RESPONSIVE -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!-- COMPATIBILIDAD CON INTERNET EXPLORER -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css"> <!-- ICONOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"> <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="/css/login.css"> <!-- ESTILOS  -->
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+    <!-- Header -->
+    <header>
+      <div class="container-header">
+          <div class="container-header">
+              <!-- CAFETEANDO LOGO -->
+              <div class="cafeteando-logo">
+                  <a href="/index.html">
+                  <img class="cafeteando-logo-img" src="Imagenes/Logo/CAFETEANDO-logo.png" alt="CAFETEANDO-logo">
+                  </a>
+              </div>
+              <!-- Botones usuario -->
+              <div class="usser-buttons">
+                  <div class="mi-cuenta">
+                      <div class="btn-group">
+                          <button type="button" class="btn" data-bs-toggle="dropdown" aria-expanded="false">
+                              <i class="fa-solid fa-user"></i>
+                              <span>Mi Cuenta</span>
+                          </button>
+                          <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="/login.html">Iniciar Sesión</a></li>
+                              <li><a class="dropdown-item" href="/login.html">Registrarse</a></li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="mi-carrito">
+                      <span>Mi Carrito</span>
+                      <i class="fa-solid fa-cart-shopping"></i>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <!-- Barra de navegación -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+              <a class="navbar-brand" href="/index.html">
+                  <img class="cafeteando-logo-icono" src="Imagenes/Logo/CAFETEANDO-logo-icono.png" alt="CAFETEANDO-logo-icono">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav nav-underline me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                          <a class="nav-link" aria-current="page" href="/index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Productos
+                          </a>
+                          <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="/productos.html#Bebidas-Calientes">Bebidas Calientes</a></li>
+                              <li><a class="dropdown-item" href="/productos.html#Bebidas-Frias">Bebidas Frías</a></li>
+                              <li><a class="dropdown-item" href="/productos.html#Wraps">Wraps</a></li>
+                              <li><a class="dropdown-item" href="/productos.html#Panaderia">Panadería</a></li>
+                              <li><a class="dropdown-item" href="/productos.html#Postres">Postres</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="/productos.html">Todos los productos</a></li>
+                          </ul>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="/quienes-somos.html">¿Quiénes somos?</a>
+                      </li>
+                  </ul>
+                  <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Escribe aca..." aria-label="Search">
+                  <button class="btn btn-dark" type="submit">Buscar</button>
+                  </form>
+              </div>
+          </div>
+      </nav>
+  </header>
+  <body>
+  <main>
+  <div class="section"> <!-- SECCION -->
+    <div class="container"> <!-- CONTENEDOR -->
+      <div class="row full-height justify-content-center">
+        <div class="col-12 text-center align-self-center py-5">
+          <div class="section pb-5 pt-5 pt-sm-2 text-center">
+            <h6 class="mb-0 pb-3"><span>Iniciar Sesión o Registarse</span></h6>
+              <input class="checkbox" type="checkbox" id="reg-log" name="reg-log"/>
+              <label for="reg-log"></label>
+                <div class="card-3d-wrap mx-auto">
+                  <div class="card-3d-wrapper">
+                    <div class="card-front">
+                      <div class="center-wrap">
+                        <div class="section text-center">
+                          <h4 class="mb-4 pb-3">Inicia Sesión</h4>
+                        <div class="form-group">
+                          <input type="email" class="form-style" placeholder="Correo">
+                          <i class="input-icon uil uil-at"></i>
+                        </div>
+                        <div class="form-group mt-2">
+                          <input type="password" class="form-style" placeholder="Contraseña">
+                          <i class="input-icon uil uil-lock-alt"></i>
+                        </div>
+                          <a href="./generar/formulario.html" class="btn-f mt-4">Iniciar</a>
+                          <p class="mb-0 mt-4 text-center"><a href="" class="link">¿Olvidaste tu contraseña?</a></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-back">
+                      <div class="center-wrap">
+                        <div class="section text-center">
+                          <h4 class="mb-3 pb-3">Registrate</h4>
+                          <div class="form-group">
+                            <input type="text" class="form-style" placeholder="Nombre">
+                            <i class="input-icon uil uil-user"></i>
+                          </div>
+                          <div class="form-group mt-2">
+                            <input type="tel" class="form-style" placeholder="Número Telefónico">
+                            <i class="input-icon uil uil-phone"></i>
+                          </div>
+                          <div class="form-group mt-2">
+                            <input type="email" class="form-style" placeholder="Correo">
+                            <i class="input-icon uil uil-at"></i>
+                          </div>
+                          <div class="form-group mt-2">
+                            <input type="password" class="form-style" placeholder="Contraseña">
+                            <i class="input-icon uil uil-lock-alt"></i>
+                          </div>
+                          <a href="" class="btn mt-4">Registrar</a>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    </main>
+<!-- Footer -->
+<footer class="footer">
+  <div class="container container-footer">
+      <div class="menu-footer">
+          <div class="contact-info">
+              <p class="title-footer">Información de contacto</p>
+              <ul>
+                  <li>
+                      Dirección: Calle 79 #11-45
+                  </li>
+                  <li>
+                      Teléfono: 300-111-2223
+                  </li>
+                  <li>
+                      Email: cafeteando@gmail.com
+                  </li>
+              </ul>
+              <div class="social-icons">
+                  <span class="facebook">
+                      <a href="https://www.facebook.com/">
+                          <i class="fa-brands fa-facebook-f fa-bounce"></i>
+                      </a>
+                  </span>
+                  <span class="instagram">
+                      <a href="https://www.instagram.com/">
+                          <i class="fa-brands fa-instagram fa-bounce"></i>
+                      </a>
+                  </span>
+                  <span class="x">
+                      <a href="https://www.twitter.com/">
+                          <i class="fa-brands fa-square-x-twitter fa-bounce"></i>
+                      </a>
+                  </span>
+                  <span class="youtube">
+                      <a href="https://www.youtube.com/">
+                          <i class="fa-brands fa-youtube fa-bounce"></i>
+                      </a>
+                  </span>
+              </div>
+          </div>
+          <div class="information">
+              <p class="title-footer">Información</p>
+              <ul>
+                  <li>
+                      <a href="#">Acerca de nosotros</a>
+                  </li>
+                  <li>
+                      <a href="#">Políticas de privacidad</a>
+                  </li>
+                  <li>
+                      <a href="#">Términos y condiciones</a>
+                  </li>
+                  <li>
+                      <a href="#">Contáctanos</a>
+                  </li>
+              </ul>
+          </div>
+          <div class="my-account">
+              <p class="title-footer">Cuenta</p>
+              <ul>
+                  <li>
+                      <a href="#">Mi cuenta</a>
+                  </li>
+                  <li>
+                      <a href="#">Historial de ordenes</a>
+                  </li>
+                  <li>
+                      <a href="#">Lista de deseos</a>
+                  </li>
+                  <li>
+                      <a href="#">Favoritos</a>
+                  </li>
+                  <li>
+                      <a href="#">Reembolsos</a>
+                  </li>
+              </ul>
+          </div>
+          <div class="newsletter">
+              <p class="title-footer">Boletín Informativo</p>
+              <div class="content">
+                  <p>Suscribirte a nuestros boletines ahora y mantente al dia con nuevos productos y promociones.</p>
+                  <input type="email" placeholder="Ingresa tu correo aqui...">
+                  <button type="submit">Suscribete</button>
+              </div>
+          </div>
+      </div>
+      <div class="copyright">
+          <p>© 2023 CAFETEANDO. La mejor alimentacion que podras conseguir. Todos los derechos reservados.</p>
+          <img src="Imagenes/Inicio/pagos.png" alt="Metodos de pago">
+      </div>
+  </div>
+</footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/be62043f8c.js" crossorigin="anonymous"></script>
+</html>
